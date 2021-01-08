@@ -1,0 +1,300 @@
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Global Styles */
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    padding: 0.8rem;
+    width: 100%;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+
+input:focus {
+    border-radius: 5px;
+    border: 2px solid var(--dark);
+}
+
+textarea {
+    padding: 0.8rem;
+    width: 100%;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+
+textarea:focus {
+    border-radius: 5px;
+    border: 2px solid var(--dark);
+}
+
+/* Utilities */
+
+/* General */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border: var(--secondary) 1px solid;
+    border-radius: 5px;
+}
+
+/* Mixed */
+
+.border-radius {
+    border-radius: 5px;
+}
+
+/* Navbar */
+.navbar-link {
+    color: var(--light);
+    font-size: 1.2rem;
+}
+
+.navbar-logo {
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.button-success {
+    background-color: var(--success);
+    color: #fff;
+}
+
+.button-danger {
+    background-color: var(--danger);
+    color: #fff;
+}
+
+/* Colors */
+
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* Text */
+.text-center {
+    text-align: center;
+}
+
+/* Padding */
+.p {
+    padding: 0.5rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+  
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.px {
+    padding: 0 0.5rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+  
+.px-2 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.px-4 {
+    padding: 0 4rem;
+}
+
+.py {
+    padding: 0.5rem 0;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+  
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.py-4 {
+    padding: 4rem 0;
+}
+
+/* Margin */
+.m {
+    margin: 0.5rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.m-4 {
+    margin: 4rem;
+}
+
+.mx {
+    margin: 0 0.5rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.mx-3 {
+    margin: 0 3rem;
+}
+
+.mx-4 {
+    margin: 0 4rem;
+}
+
+.my {
+    margin: 0.5rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+/* Grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
